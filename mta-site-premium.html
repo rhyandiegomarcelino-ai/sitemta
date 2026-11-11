@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PWY5XLLKTF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-PWY5XLLKTF');
+    gtag('config', 'G-JLGQVSBZP5');
+  </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JLGQVSBZP5"></script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0A2E5C">
+  <title>MTA Marcelino Topografia e Agrimensura</title>
+  <link rel="icon" type="image/png" href="/mta-favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --navy: #0A2E5C;
+      --navy-light: #174A8B;
+      --yellow: #FFDE21;
+      --yellow-hover: #FFD000;
+      --ink: #1F2937;
+      --white: #FFFFFF;
+      --soft: #F5F7FA;
+      --line: #E5E7EB;
+      --container: 1200px;
+      --radius: 22px;
+      --shadow: 0 18px 55px rgba(10, 46, 92, .10);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; scroll-padding-top: 105px; }
+    body {
+      background: var(--white);
+      color: var(--ink);
+      font-family: "DM Sans", sans-serif;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+    img { display: block; max-width: 100%; }
+    a { color: inherit; }
+    .container { width: min( calc(100% - 48px), var(--container)); margin-inline: auto; }
+    .eyebrow {
+      display: inline-flex; align-items: center; gap: 11px;
+      color: var(--navy); font-size: .76rem; font-weight: 800;
+      letter-spacing: .16em; text-transform: uppercase;
+    }
+    .eyebrow::before { content: ""; width: 27px; height: 2px; background: var(--yellow); }
+    .section-heading { max-width: 720px; margin: 0 auto 54px; text-align: center; }
+    .section-heading h2 {
+      margin-top: 13px; color: var(--navy);
+      font: 800 clamp(2rem, 4vw, 3.1rem)/1.12 "Manrope", sans-serif;
+      letter-spacing: -.045em;
+    }
+    .section-heading p { margin-top: 17px; color: var(--ink); }
+    .section { padding: 112px 0; }
+    .btn {
+      display: inline-flex; min-height: 56px; align-items: center; justify-content: center;
+      gap: 12px; padding: 0 27px; border: 1px solid var(--yellow);
+      border-radius: 8px; background: var(--yellow); color: var(--navy);
+      font-size: .9rem; font-weight: 800; text-decoration: none;
+      transition: transform .25s ease, box-shadow .25s ease, background .25s ease;
+      box-shadow: 0 10px 26px rgba(255, 222, 33, .18);
+    }
+    .btn:hover { background: var(--yellow-hover); transform: translateY(-3px); box-shadow: 0 16px 30px rgba(255, 222, 33, .28); }
+    .btn svg { width: 17px; height: 17px; }
+
+    /* Header */
+    .site-header {
+      position: sticky; top: 0; z-index: 1000;
+      background: rgba(255,255,255,.96); backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(229,231,235,.85);
+    }
+    .nav-wrap { min-height: 92px; display: flex; align-items: center; justify-content: space-between; gap: 30px; }
+    .brand { display: inline-flex; align-items: center; text-decoration: none; flex: 0 0 auto; }
+    .brand img { width: auto; height: 66px; object-fit: contain; }
+    .nav-menu { display: flex; align-items: center; gap: 36px; }
+    .nav-menu a {
+      position: relative; color: var(--navy); font-size: .88rem; font-weight: 700;
+      text-decoration: none; transition: color .2s ease;
+    }
+    .nav-menu a:not(.nav-cta)::after {
+      position: absolute; right: 0; bottom: -9px; left: 0; height: 2px;
+      content: ""; background: var(--yellow); transform: scaleX(0); transform-origin: left;
+      transition: transform .25s ease;
+    }
+    .nav-menu a:hover { color: var(--navy-light); }
+    .nav-menu a:hover::after { transform: scaleX(1); }
+    .nav-menu .nav-cta { padding: 13px 19px; border-radius: 7px; background: var(--navy); color: var(--white); }
+    .nav-menu .nav-cta:hover { background: var(--navy-light); }
+    .menu-toggle {
+      display: none; width: 46px; height: 46px; border: 1px solid var(--line);
+      border-radius: 8px; background: var(--white); color: var(--navy); cursor: pointer;
+    }
+    .menu-toggle svg { width: 22px; height: 22px; }
+
+    /* Hero */
+    .hero {
+      position: relative; min-height: min(760px, calc(100vh - 92px));
+      display: flex; align-items: center; overflow: hidden;
+      background: var(--navy) url("banner2.png") center/cover no-repeat;
+      isolation: isolate;
+    }
+    .hero::before {
+      position: absolute; inset: 0; z-index: -1; content: "";
+      background: linear-gradient(90deg, rgba(10,46,92,.96) 0%, rgba(10,46,92,.88) 43%, rgba(10,46,92,.30) 100%);
+    }
+    .hero-inner { padding-top: 90px; padding-bottom: 100px; }
+    .hero-copy { max-width: 760px; color: var(--white); }
+    .hero .eyebrow { color: var(--yellow); }
+    .hero h1 {
+      max-width: 760px; margin-top: 24px;
+      font: 800 clamp(2.8rem, 6.2vw, 5.25rem)/1.04 "Manrope", sans-serif;
+      letter-spacing: -.055em;
+    }
+    .hero-copy > p { max-width: 650px; margin-top: 25px; color: var(--white); font-size: clamp(1rem, 1.5vw, 1.2rem); line-height: 1.8; }
+    .hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 22px; margin-top: 36px; }
+    .hero-note { color: var(--white); font-size: .85rem; font-weight: 600; }
+    .hero-note span { color: var(--yellow); }
+
+    /* Intro */
+    .intro { padding: 108px 0 104px; }
+    .intro-grid { display: grid; grid-template-columns: .72fr 1.28fr; gap: 90px; align-items: start; }
+    .intro-title h2 {
+      margin-top: 16px; color: var(--navy);
+      font: 800 clamp(2.15rem, 4vw, 3.4rem)/1.12 "Manrope", sans-serif;
+      letter-spacing: -.05em;
+    }
+    .intro-copy { padding-top: 14px; font-size: 1.04rem; line-height: 1.95; }
+    .intro-copy p { max-width: 760px; }
+
+    /* Services */
+    .services { background: var(--soft); }
+    .services-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+    .service-card {
+      position: relative; min-height: 225px; padding: 28px 25px;
+      display: flex; flex-direction: column; justify-content: space-between;
+      background: var(--white); border: 1px solid var(--line); border-radius: 14px;
+      transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+      overflow: hidden;
+    }
+    .service-card::before { position: absolute; top: 0; left: 0; width: 42px; height: 4px; content: ""; background: var(--yellow); transition: width .25s ease; }
+    .service-card:hover { transform: translateY(-6px); border-color: var(--yellow); box-shadow: var(--shadow); }
+    .service-card:hover::before { width: 100%; }
+    .service-number { color: var(--navy-light); font: 800 .78rem "Manrope", sans-serif; letter-spacing: .12em; }
+    .service-card h3 { margin-top: 28px; color: var(--navy); font: 800 1.08rem/1.35 "Manrope", sans-serif; letter-spacing: -.02em; }
+    .service-card p { margin-top: 10px; color: var(--ink); font-size: .9rem; line-height: 1.65; }
+
+    /* Equipment */
+    .equipment-layout { display: grid; grid-template-columns: .7fr 1.3fr; gap: 70px; align-items: end; }
+    .equipment-intro h2 { margin-top: 16px; color: var(--navy); font: 800 clamp(2.2rem, 4vw, 3.3rem)/1.1 "Manrope", sans-serif; letter-spacing: -.05em; }
+    .equipment-gallery { display: grid; grid-template-columns: 1.15fr .85fr; grid-template-rows: 220px 220px; gap: 14px; }
+    .equipment-gallery figure { position: relative; overflow: hidden; border-radius: 15px; background: var(--soft); }
+    .equipment-gallery figure:first-child { grid-row: span 2; }
+    .equipment-gallery img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s ease; }
+    .equipment-gallery figure:hover img { transform: scale(1.045); }
+    .equipment-gallery figcaption {
+      position: absolute; right: 12px; bottom: 12px; left: 12px;
+      padding: 10px 13px; border-radius: 7px; background: rgba(10,46,92,.88);
+      color: var(--white); font-size: .78rem; font-weight: 700;
+    }
+
+    /* Differentials */
+    .differentials { background: var(--navy); color: var(--white); }
+    .differentials .section-heading h2, .differentials .section-heading p { color: var(--white); }
+    .differentials .eyebrow { color: var(--yellow); }
+    .differential-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; overflow: hidden; border: 1px solid rgba(255,255,255,.22); border-radius: 15px; background: rgba(255,255,255,.22); }
+    .differential-item { min-height: 150px; display: flex; align-items: center; gap: 18px; padding: 27px; background: var(--navy); color: var(--white); font-weight: 700; }
+    .check {
+      flex: 0 0 34px; width: 34px; height: 34px; display: grid; place-items: center;
+      border-radius: 50%; background: var(--yellow); color: var(--navy); font-weight: 900;
+    }
+
+    /* Partnerships */
+    .partnership-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; align-items: stretch; }
+    .partner-card { padding: 38px; border: 1px solid var(--line); border-radius: 16px; background: var(--white); box-shadow: 0 12px 40px rgba(10,46,92,.055); }
+    .partner-top { display: flex; align-items: flex-start; gap: 17px; margin-bottom: 25px; }
+    .partner-symbol { width: 52px; height: 52px; flex: 0 0 52px; display: grid; place-items: center; border-radius: 12px; background: var(--soft); color: var(--navy); font-size: 1.5rem; }
+    .partner-card h3 { color: var(--navy); font: 800 1.35rem/1.3 "Manrope", sans-serif; }
+    .partner-card strong { display: block; margin-top: 6px; font-size: .92rem; }
+    .partner-card p { line-height: 1.8; }
+    .partner-card .partner-description { min-height: 90px; margin-top: 17px; }
+    .partner-card .btn { width: 100%; margin-top: 24px; }
+    .partner-list { margin-top: 18px; list-style: none; }
+    .partner-list li { position: relative; margin: 10px 0; padding-left: 22px; font-size: .91rem; line-height: 1.6; }
+    .partner-list li::before { position: absolute; left: 0; content: "✔"; color: var(--navy); font-weight: 800; }
+
+    /* Service area */
+    .area-atendimento { padding: 82px 0; background: var(--soft); text-align: center; }
+    .area-atendimento h2 { margin-top: 14px; color: var(--navy); font: 800 clamp(2rem, 4vw, 3rem)/1.12 "Manrope", sans-serif; letter-spacing: -.045em; }
+    .area-atendimento p { max-width: 700px; margin: 17px auto 0; font-size: 1.04rem; }
+
+    /* CTA + footer */
+    .cta-final { position: relative; overflow: hidden; padding: 92px 0; background: linear-gradient(125deg, var(--navy), var(--navy-light)); color: var(--white); text-align: center; }
+    .cta-final::before, .cta-final::after { position: absolute; content: ""; width: 260px; height: 260px; border: 1px solid rgba(255,255,255,.18); border-radius: 50%; }
+    .cta-final::before { top: -150px; left: -90px; }
+    .cta-final::after { right: -100px; bottom: -180px; width: 360px; height: 360px; }
+    .cta-content { position: relative; z-index: 1; }
+    .cta-final h2 { color: var(--white); font: 800 clamp(2.1rem, 4.5vw, 3.5rem)/1.1 "Manrope", sans-serif; letter-spacing: -.05em; }
+    .cta-final p { margin-top: 15px; color: var(--white); }
+    .cta-final .btn { margin-top: 28px; }
+    .redes { display: flex; justify-content: center; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
+    .redes a { padding: 11px 22px; border: 1px solid rgba(255,255,255,.55); border-radius: 7px; color: var(--white); font-size: .88rem; font-weight: 700; text-decoration: none; transition: background .2s ease, color .2s ease, border-color .2s ease; }
+    .redes a:hover { border-color: var(--yellow); background: var(--yellow); color: var(--navy); }
+    footer { padding: 27px 24px; background: var(--navy); color: var(--white); text-align: center; font-size: .83rem; }
+
+    /* Motion and responsive */
+    .reveal { opacity: 0; transform: translateY(22px); transition: opacity .7s ease, transform .7s ease; }
+    .reveal.is-visible { opacity: 1; transform: translateY(0); }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; }
+      .reveal { opacity: 1; transform: none; }
+    }
+    @media (max-width: 1000px) {
+      .services-grid { grid-template-columns: repeat(2, 1fr); }
+      .intro-grid, .equipment-layout { grid-template-columns: 1fr; gap: 35px; }
+      .equipment-gallery { max-width: 760px; width: 100%; }
+      .differential-grid { grid-template-columns: repeat(2, 1fr); }
+      .nav-menu { gap: 22px; }
+    }
+    @media (max-width: 700px) {
+      .container { width: min(calc(100% - 36px), var(--container)); }
+      .nav-wrap { min-height: 76px; }
+      .brand img { height: 55px; }
+      .menu-toggle { display: grid; place-items: center; }
+      .nav-menu {
+        position: absolute; top: calc(100% + 1px); right: 0; left: 0;
+        display: none; flex-direction: column; align-items: stretch; gap: 0;
+        padding: 10px 18px 20px; background: var(--white);
+        border-bottom: 1px solid var(--line); box-shadow: 0 18px 25px rgba(10,46,92,.08);
+      }
+      .nav-menu.is-open { display: flex; }
+      .nav-menu a { padding: 14px 8px; }
+      .nav-menu a:not(.nav-cta)::after { display: none; }
+      .nav-menu .nav-cta { margin-top: 8px; text-align: center; }
+      .hero { min-height: 690px; background-position: 58% center; }
+      .hero::before { background: linear-gradient(90deg, rgba(10,46,92,.96), rgba(10,46,92,.78)); }
+      .hero-inner { padding-top: 75px; padding-bottom: 75px; }
+      .hero h1 { font-size: clamp(2.5rem, 12vw, 3.8rem); }
+      .hero-actions { align-items: flex-start; flex-direction: column; gap: 15px; }
+      .section { padding: 78px 0; }
+      .intro { padding: 78px 0; }
+      .section-heading { margin-bottom: 36px; }
+      .services-grid { grid-template-columns: 1fr; }
+      .service-card { min-height: 190px; }
+      .equipment-gallery { grid-template-rows: 180px 180px; gap: 10px; }
+      .differential-grid { grid-template-columns: 1fr; }
+      .differential-item { min-height: 105px; padding: 20px; }
+      .partnership-grid { grid-template-columns: 1fr; }
+      .partner-card { padding: 27px 23px; }
+      .partner-card .partner-description { min-height: 0; }
+      .area-atendimento { padding: 68px 0; }
+      .cta-final { padding: 75px 0; }
+    }
+    @media (max-width: 420px) {
+      .equipment-gallery { grid-template-columns: 1fr 1fr; grid-template-rows: 145px 145px; }
+      .equipment-gallery figure:first-child { grid-row: span 2; }
+      .btn { width: 100%; padding-inline: 18px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#" aria-label="MTA - Página inicial">
+        <img src="ChatGPT Image 28 de jul. de 2026, 21_07_47.png" alt="Logo MTA">
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="primary-menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <nav class="nav-menu" id="primary-menu" aria-label="Navegação principal">
+        <a href="#servicos">Serviços</a>
+        <a href="#equipamentos">Equipamentos</a>
+        <a href="#contato">Contato</a>
+        <a class="nav-cta" href="#contato">Fale conosco</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy reveal">
+          <span class="eyebrow">MTA · Precisão em cada detalhe</span>
+          <h1>MTA Marcelino Topografia e Agrimensura</h1>
+          <p>Precisão, segurança e regularização do seu imóvel com tecnologia GNSS RTK, Drone e Estação Total.</p>
+          <div class="hero-actions">
+            <a class="btn" href="https://wa.me/5541988842635?text=Olá,%20gostaria%20de%20um%20orçamento%20gratuito."
+               onclick="gtag('event', 'whatsapp_orcamento', {'event_category': 'contato', 'event_label': 'Solicitar Orçamento'});">
+              Solicitar Orçamento Gratuito
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <span class="hero-note"><span>●</span> Tecnologia, precisão e confiança</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="intro">
+      <div class="container intro-grid">
+        <div class="intro-title reveal">
+          <span class="eyebrow">Conheça a MTA</span>
+          <h2>Quem Somos</h2>
+        </div>
+        <div class="intro-copy reveal">
+          <p>A MTA (Marcelino Topografia e Agrimensura) é especializada em topografia e agrimensura, atuando com precisão, responsabilidade e tecnologia de ponta. Utilizamos equipamentos modernos, como GNSS RTK, estação total e drones, garantindo levantamentos confiáveis e de alta qualidade. Nosso trabalho é pautado pelo comprometimento, atenção aos detalhes e busca constante pela excelência, oferecendo soluções eficientes para cada projeto. Além disso, contamos com apoio de assessoria jurídica e engenharia florestal, garantindo suporte completo e multidisciplinar.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section services" id="servicos">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Soluções técnicas</span>
+          <h2>Serviços</h2>
+        </div>
+        <div class="services-grid">
+          <article class="service-card reveal"><span class="service-number">01 / MTA</span><div><h3>Medição de Terrenos e Chácaras</h3><p>Determinação precisa da área real do imóvel.</p></div></article>
+          <article class="service-card reveal"><span class="service-number">02 / MTA</span><div><h3>Georreferenciamento Rural</h3><p>Regularização conforme INCRA e SIGEF.</p></div></article>
+          <article class="service-card reveal"><span class="service-number">03 / MTA</span><div><h3>Demarcação de Divisas</h3><p>Implantação precisa de limites de propriedades.</p></div></article>
+          <article class="service-card reveal"><span class="service-number">04 / MTA</span><div><h3>Desmembramento de Lotes</h3><p>Divisão técnica e legal de terrenos.</p></div></article>
+          <article class="service-card reveal"><span class="service-number">05 / MTA</span><div><h3>Unificação de Lotes</h3><p>União de imóveis em uma única matrícula.</p></div></article>
+          <article class="service-card reveal"><span class="service-number">06 / MTA</span><div><h3>Usucapião</h3><p>Plantas e memoriais para processos legais.</p></div></article>
+          <article class="service-card reveal"><span class="service-number">07 / MTA</span><div><h3>Levantamento Cadastral</h3><p>Mapeamento completo de áreas e estruturas.</p></div></article>
+          <article class="service-card reveal"><span class="service-number">08 / MTA</span><div><h3>Georreferenciamento Urbano</h3><p>Regularização de imóveis urbanos.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="equipamentos">
+      <div class="container equipment-layout">
+        <div class="equipment-intro reveal">
+          <span class="eyebrow">Precisão em campo</span>
+          <h2>Tecnologia e Equipamentos</h2>
+        </div>
+        <div class="equipment-gallery reveal">
+          <figure><img src="rtk.jpg" alt="GNSS RTK"><figcaption>GNSS RTK</figcaption></figure>
+          <figure><img src="estaçãototal.jpeg" alt="Estação Total"><figcaption>Estação Total</figcaption></figure>
+          <figure><img src="droneppk.jpeg" alt="Drone PPK"><figcaption>Drone PPK</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section differentials">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">O que nos diferencia</span>
+          <h2>Diferenciais</h2>
+        </div>
+        <div class="differential-grid">
+          <div class="differential-item reveal"><span class="check">✓</span><span>Levantamentos Rápidos e Precisos</span></div>
+          <div class="differential-item reveal"><span class="check">✓</span><span>Atendimento Rural e Urbano</span></div>
+          <div class="differential-item reveal"><span class="check">✓</span><span>Regularização Completa de Imóveis</span></div>
+          <div class="differential-item reveal"><span class="check">✓</span><span>Equipe Técnica Especializada</span></div>
+          <div class="differential-item reveal"><span class="check">✓</span><span>Tecnologia de Ponta em Campo</span></div>
+          <div class="differential-item reveal"><span class="check">✓</span><span>Soluções Florestais e Ambientais</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Atuação integrada</span>
+          <h2>Parcerias Técnicas Especializadas</h2>
+        </div>
+        <div class="partnership-grid">
+          <article class="partner-card reveal">
+            <div class="partner-top">
+              <div class="partner-symbol" aria-hidden="true">⚖️</div>
+              <div><h3>Assessoria Jurídica Imobiliária</h3><strong>Advogado especialista em Direito Imobiliário</strong></div>
+            </div>
+            <p class="partner-description">✔ Suporte jurídico com serviços de regularização e documentação imobiliária.</p>
+            <a class="btn" href="https://wa.me/5541988842635?text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20assessoria%20jur%C3%ADdica%20imobili%C3%A1ria."
+               onclick="gtag('event', 'whatsapp_juridico', {'event_category': 'contato', 'event_label': 'Assessoria Jurídica', 'transport_type': 'beacon'});">
+              Mais Informações
+            </a>
+          </article>
+          <article class="partner-card reveal">
+            <div class="partner-top">
+              <div class="partner-symbol" aria-hidden="true">🌳</div>
+              <div><h3>Consultoria Florestal e Ambiental</h3><strong>Engenheiro Florestal</strong></div>
+            </div>
+            <ul class="partner-list">
+              <li>Inventário florestal (medição e análise de árvores e áreas florestais)</li>
+              <li>Manejo florestal sustentável (planejamento de corte, replantio e conservação)</li>
+              <li>Licenciamento ambiental e estudos ambientais</li>
+              <li>Recuperação de áreas degradadas (reflorestamento e recomposição de vegetação)</li>
+              <li>Geoprocessamento e uso de imagens de satélite para análise de áreas</li>
+              <li>Planejamento de plantios comerciais (eucalipto, pinus e espécies nativas)</li>
+              <li>Perícias e laudos ambientais e florestais</li>
+              <li>Carbono florestal e projetos de crédito de carbono</li>
+            </ul>
+            <a class="btn" href="https://wa.me/5541988842635?text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20consultoria%20florestal%20e%20ambiental."
+               onclick="gtag('event', 'whatsapp_florestal', {'event_category': 'contato', 'event_label': 'Consultoria Florestal', 'transport_type': 'beacon'});">
+              Mais Informações
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="area-atendimento">
+      <div class="container reveal">
+        <span class="eyebrow">Onde atuamos</span>
+        <h2>Área de Atendimento</h2>
+        <p>Atuamos em Curitiba e região metropolitana com serviços de topografia e agrimensura.</p>
+      </div>
+    </section>
+
+    <section id="contato" class="cta-final">
+      <div class="container cta-content reveal">
+        <h2>Solicite Seu Orçamento</h2>
+        <a class="btn" href="https://wa.me/5541988842635?text=Olá,%20gostaria%20de%20um%20orçamento%20gratuito."
+           onclick="gtag('event', 'whatsapp_orcamento', {'event_category': 'contato', 'event_label': 'Solicitar Orçamento'});">
+          Solicitar Orçamento Gratuito
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <div class="redes">
+          <a href="https://www.instagram.com/mtagrimensuras" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://www.facebook.com/share/1Dz5rKtDHU" target="_blank" rel="noopener noreferrer">Facebook</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>MTA Marcelino Topografia e Agrimensura © 2026</footer>
+
+  <script>
+    const menuButton = document.querySelector('.menu-toggle');
+    const menu = document.querySelector('.nav-menu');
+
+    menuButton.addEventListener('click', () => {
+      const isOpen = menu.classList.toggle('is-open');
+      menuButton.setAttribute('aria-expanded', String(isOpen));
+      menuButton.setAttribute('aria-label', isOpen ? 'Fechar menu' : 'Abrir menu');
+    });
+
+    menu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        menu.classList.remove('is-open');
+        menuButton.setAttribute('aria-expanded', 'false');
+        menuButton.setAttribute('aria-label', 'Abrir menu');
+      });
+    });
+
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.reveal').forEach(element => revealObserver.observe(element));
+  </script>
+</body>
+</html>
