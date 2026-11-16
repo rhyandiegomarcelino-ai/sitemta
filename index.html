@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PWY5XLLKTF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-PWY5XLLKTF');
+    gtag('config', 'G-JLGQVSBZP5');
+  </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JLGQVSBZP5"></script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"ProfessionalService","name":"MTA Marcelino Topografia e Agrimensura","url":"https://mtagrimensura.com.br/","telephone":"+55 41 98884-2635","areaServed":["São José dos Pinhais","Curitiba","Mandirituba","Tijucas do Sul","Fazenda Rio Grande"],"description":"Serviços de topografia e agrimensura para imóveis rurais e urbanos."}
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0A2E5C">
+  <title>Topografia em São José dos Pinhais e Região | MTA Agrimensura</title>
+  <meta name="description" content="Medição de terrenos e chácaras, georreferenciamento rural e urbano, demarcação de divisas, desmembramento e levantamento cadastral em São José dos Pinhais e região. Solicite seu orçamento pelo WhatsApp.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://mtagrimensura.com.br/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="MTA Marcelino Topografia e Agrimensura">
+  <meta property="og:description" content="Serviços de topografia e agrimensura para imóveis rurais e urbanos. Peça seu orçamento pelo WhatsApp.">
+  <meta property="og:url" content="https://mtagrimensura.com.br/">
+  <meta property="og:image" content="https://mtagrimensura.com.br/banner2.png">
+  <link rel="icon" type="image/png" href="mta-favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --navy: #0A2E5C;
+      --navy-light: #174A8B;
+      --yellow: #FFDE21;
+      --yellow-hover: #FFD000;
+      --ink: #1F2937;
+      --white: #FFFFFF;
+      --soft: #F5F7FA;
+      --line: #E5E7EB;
+      --container: 1200px;
+      --radius: 22px;
+      --shadow: 0 18px 55px rgba(10, 46, 92, .10);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; scroll-padding-top: 105px; }
+    body {
+      background: var(--white);
+      color: var(--ink);
+      font-family: "DM Sans", sans-serif;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+    img { display: block; max-width: 100%; }
+    a { color: inherit; }
+    .container { width: min( calc(100% - 48px), var(--container)); margin-inline: auto; }
+    .eyebrow {
+      display: inline-flex; align-items: center; gap: 11px;
+      color: var(--navy); font-size: .76rem; font-weight: 800;
+      letter-spacing: .16em; text-transform: uppercase;
+    }
+    .eyebrow::before { content: ""; width: 27px; height: 2px; background: var(--yellow); }
+    .section-heading { max-width: 720px; margin: 0 auto 54px; text-align: center; }
+    .section-heading h2 {
+      margin-top: 13px; color: var(--navy);
+      font: 800 clamp(2rem, 4vw, 3.1rem)/1.12 "Manrope", sans-serif;
+      letter-spacing: -.045em;
+    }
+    .section-heading p { margin-top: 17px; color: var(--ink); }
+    .section { padding: 112px 0; }
+    .btn {
+      display: inline-flex; min-height: 56px; align-items: center; justify-content: center;
+      gap: 12px; padding: 0 27px; border: 1px solid var(--yellow);
+      border-radius: 8px; background: var(--yellow); color: var(--navy);
+      font-size: .9rem; font-weight: 800; text-decoration: none;
+      transition: transform .25s ease, box-shadow .25s ease, background .25s ease;
+      box-shadow: 0 10px 26px rgba(255, 222, 33, .18);
+    }
+    .btn:hover { background: var(--yellow-hover); transform: translateY(-3px); box-shadow: 0 16px 30px rgba(255, 222, 33, .28); }
+    .btn svg { width: 17px; height: 17px; }
+
+    /* Header */
+    .site-header {
+      position: sticky; top: 0; z-index: 1000;
+      background: rgba(255,255,255,.96); backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(229,231,235,.85);
+    }
+    .nav-wrap { min-height: 92px; display: flex; align-items: center; justify-content: space-between; gap: 30px; }
+    .brand { display: inline-flex; align-items: center; text-decoration: none; flex: 0 0 auto; }
+    .brand img { width: auto; height: 66px; object-fit: contain; }
+    .nav-menu { display: flex; align-items: center; gap: 36px; }
+    .nav-menu a {
+      position: relative; color: var(--navy); font-size: .88rem; font-weight: 700;
+      text-decoration: none; transition: color .2s ease;
+    }
+    .nav-menu a:not(.nav-cta)::after {
+      position: absolute; right: 0; bottom: -9px; left: 0; height: 2px;
+      content: ""; background: var(--yellow); transform: scaleX(0); transform-origin: left;
+      transition: transform .25s ease;
+    }
+    .nav-menu a:hover { color: var(--navy-light); }
+    .nav-menu a:hover::after { transform: scaleX(1); }
+    .nav-menu .nav-cta { padding: 13px 19px; border-radius: 7px; background: var(--navy); color: var(--white); }
+    .nav-menu .nav-cta:hover { background: var(--navy-light); }
+    .menu-toggle {
+      display: none; width: 46px; height: 46px; border: 1px solid var(--line);
+      border-radius: 8px; background: var(--white); color: var(--navy); cursor: pointer;
+    }
+    .menu-toggle svg { width: 22px; height: 22px; }
+
+    /* Hero */
+    .hero {
+      position: relative; min-height: min(760px, calc(100vh - 92px));
+      display: flex; align-items: center; overflow: hidden;
+      background: var(--navy) url("banner2.png") center/cover no-repeat;
+      isolation: isolate;
+    }
+    .hero::before {
+      position: absolute; inset: 0; z-index: -1; content: "";
+      background: linear-gradient(90deg, rgba(10,46,92,.96) 0%, rgba(10,46,92,.88) 43%, rgba(10,46,92,.30) 100%);
+    }
+    .hero-inner { padding-top: 90px; padding-bottom: 100px; }
+    .hero-copy { max-width: 760px; color: var(--white); }
+    .hero .eyebrow { color: var(--yellow); }
+    .hero h1 {
+      max-width: 760px; margin-top: 24px;
+      font: 800 clamp(2.8rem, 6.2vw, 5.25rem)/1.04 "Manrope", sans-serif;
+      letter-spacing: -.055em;
+    }
+    .hero-copy > p { max-width: 650px; margin-top: 25px; color: var(--white); font-size: clamp(1rem, 1.5vw, 1.2rem); line-height: 1.8; }
+    .hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 22px; margin-top: 36px; }
+    .hero-note { color: var(--white); font-size: .85rem; font-weight: 600; }
+    .hero-note span { color: var(--yellow); }
+
+    /* Intro */
+    .intro { padding: 108px 0 104px; }
+    .intro-grid { display: grid; grid-template-columns: .72fr 1.28fr; gap: 90px; align-items: start; }
+    .intro-title h2 {
+      margin-top: 16px; color: var(--navy);
+      font: 800 clamp(2.15rem, 4vw, 3.4rem)/1.12 "Manrope", sans-serif;
+      letter-spacing: -.05em;
+    }
+    .intro-copy { padding-top: 14px; font-size: 1.04rem; line-height: 1.95; }
+    .intro-copy p { max-width: 760px; }
+
+    /* Services */
+    .services { background: var(--soft); }
+    .services-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+    .service-card {
+      position: relative; min-height: 225px; padding: 28px 25px;
+      display: flex; flex-direction: column; justify-content: space-between;
+      background: var(--white); border: 1px solid var(--line); border-radius: 14px;
+      transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+      overflow: hidden;
+    }
+    .service-card::before { position: absolute; top: 0; left: 0; width: 42px; height: 4px; content: ""; background: var(--yellow); transition: width .25s ease; }
+    .service-card:hover { transform: translateY(-6px); border-color: var(--yellow); box-shadow: var(--shadow); }
+    .service-card:hover::before { width: 100%; }
+    .service-number { color: var(--navy-light); font: 800 .78rem "Manrope", sans-serif; letter-spacing: .12em; }
+    .service-card h3 { margin-top: 28px; color: var(--navy); font: 800 1.08rem/1.35 "Manrope", sans-serif; letter-spacing: -.02em; }
+    .service-card p { margin-top: 10px; color: var(--ink); font-size: .9rem; line-height: 1.65; }
+
+    /* Equipment */
+    .equipment-layout { display: grid; grid-template-columns: .7fr 1.3fr; gap: 70px; align-items: end; }
+    .equipment-intro h2 { margin-top: 16px; color: var(--navy); font: 800 clamp(2.2rem, 4vw, 3.3rem)/1.1 "Manrope", sans-serif; letter-spacing: -.05em; }
+    .equipment-gallery { display: grid; grid-template-columns: 1.15fr .85fr; grid-template-rows: 220px 220px; gap: 14px; }
+    .equipment-gallery figure { position: relative; overflow: hidden; border-radius: 15px; background: var(--soft); }
+    .equipment-gallery figure:first-child { grid-row: span 2; }
+    .equipment-gallery img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s ease; }
+    .equipment-gallery figure:hover img { transform: scale(1.045); }
+    .equipment-gallery figcaption {
+      position: absolute; right: 12px; bottom: 12px; left: 12px;
+      padding: 10px 13px; border-radius: 7px; background: rgba(10,46,92,.88);
+      color: var(--white); font-size: .78rem; font-weight: 700;
+    }
+
+    /* Differentials */
+    .differentials { background: var(--navy); color: var(--white); }
+    .differentials .section-heading h2, .differentials .section-heading p { color: var(--white); }
+    .differentials .eyebrow { color: var(--yellow); }
+    .differential-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; overflow: hidden; border: 1px solid rgba(255,255,255,.22); border-radius: 15px; background: rgba(255,255,255,.22); }
+    .differential-item { min-height: 150px; display: flex; align-items: center; gap: 18px; padding: 27px; background: var(--navy); color: var(--white); font-weight: 700; }
+    .check {
+      flex: 0 0 34px; width: 34px; height: 34px; display: grid; place-items: center;
+      border-radius: 50%; background: var(--yellow); color: var(--navy); font-weight: 900;
+    }
+
+    /* Partnerships */
+    .partnership-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; align-items: stretch; }
+    .partner-card { padding: 38px; border: 1px solid var(--line); border-radius: 16px; background: var(--white); box-shadow: 0 12px 40px rgba(10,46,92,.055); }
+    .partner-top { display: flex; align-items: flex-start; gap: 17px; margin-bottom: 25px; }
+    .partner-symbol { width: 52px; height: 52px; flex: 0 0 52px; display: grid; place-items: center; border-radius: 12px; background: var(--soft); color: var(--navy); font-size: 1.5rem; }
+    .partner-card h3 { color: var(--navy); font: 800 1.35rem/1.3 "Manrope", sans-serif; }
+    .partner-card strong { display: block; margin-top: 6px; font-size: .92rem; }
+    .partner-card p { line-height: 1.8; }
+    .partner-card .partner-description { min-height: 90px; margin-top: 17px; }
+    .partner-card .btn { width: 100%; margin-top: 24px; }
+    .partner-list { margin-top: 18px; list-style: none; }
+    .partner-list li { position: relative; margin: 10px 0; padding-left: 22px; font-size: .91rem; line-height: 1.6; }
+    .partner-list li::before { position: absolute; left: 0; content: "✔"; color: var(--navy); font-weight: 800; }
+
+    /* Service area */
+    .area-atendimento { padding: 82px 0; background: var(--soft); text-align: center; }
+    .area-atendimento h2 { margin-top: 14px; color: var(--navy); font: 800 clamp(2rem, 4vw, 3rem)/1.12 "Manrope", sans-serif; letter-spacing: -.045em; }
+    .area-atendimento p { max-width: 700px; margin: 17px auto 0; font-size: 1.04rem; }
+
+    /* CTA + footer */
+    .cta-final { position: relative; overflow: hidden; padding: 92px 0; background: linear-gradient(125deg, var(--navy), var(--navy-light)); color: var(--white); text-align: center; }
+    .cta-final::before, .cta-final::after { position: absolute; content: ""; width: 260px; height: 260px; border: 1px solid rgba(255,255,255,.18); border-radius: 50%; }
+    .cta-final::before { top: -150px; left: -90px; }
+    .cta-final::after { right: -100px; bottom: -180px; width: 360px; height: 360px; }
+    .cta-content { position: relative; z-index: 1; }
+    .cta-final h2 { color: var(--white); font: 800 clamp(2.1rem, 4.5vw, 3.5rem)/1.1 "Manrope", sans-serif; letter-spacing: -.05em; }
+    .cta-final p { margin-top: 15px; color: var(--white); }
+    .cta-final .btn { margin-top: 28px; }
+    .redes { display: flex; justify-content: center; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
+    .redes a { padding: 11px 22px; border: 1px solid rgba(255,255,255,.55); border-radius: 7px; color: var(--white); font-size: .88rem; font-weight: 700; text-decoration: none; transition: background .2s ease, color .2s ease, border-color .2s ease; }
+    .redes a:hover { border-color: var(--yellow); background: var(--yellow); color: var(--navy); }
+    footer { padding: 27px 24px; background: var(--navy); color: var(--white); text-align: center; font-size: .83rem; }
+
+    /* Motion and responsive */
+    .reveal { opacity: 0; transform: translateY(22px); transition: opacity .7s ease, transform .7s ease; }
+    .reveal.is-visible { opacity: 1; transform: translateY(0); }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; }
+      .reveal { opacity: 1; transform: none; }
+    }
+    @media (max-width: 1000px) {
+      .services-grid { grid-template-columns: repeat(2, 1fr); }
+      .intro-grid, .equipment-layout { grid-template-columns: 1fr; gap: 35px; }
+      .equipment-gallery { max-width: 760px; width: 100%; }
+      .differential-grid { grid-template-columns: repeat(2, 1fr); }
+      .nav-menu { gap: 22px; }
+    }
+    @media (max-width: 700px) {
+      .container { width: min(calc(100% - 36px), var(--container)); }
+      .nav-wrap { min-height: 76px; }
+      .brand img { height: 55px; }
+      .menu-toggle { display: grid; place-items: center; }
+      .nav-menu {
+        position: absolute; top: calc(100% + 1px); right: 0; left: 0;
+        display: none; flex-direction: column; align-items: stretch; gap: 0;
+        padding: 10px 18px 20px; background: var(--white);
+        border-bottom: 1px solid var(--line); box-shadow: 0 18px 25px rgba(10,46,92,.08);
+      }
+      .nav-menu.is-open { display: flex; }
+      .nav-menu a { padding: 14px 8px; }
+      .nav-menu a:not(.nav-cta)::after { display: none; }
+      .nav-menu .nav-cta { margin-top: 8px; text-align: center; }
+      .hero { min-height: 690px; background-position: 58% center; }
+      .hero::before { background: linear-gradient(90deg, rgba(10,46,92,.96), rgba(10,46,92,.78)); }
+      .hero-inner { padding-top: 75px; padding-bottom: 75px; }
+      .hero h1 { font-size: clamp(2.5rem, 12vw, 3.8rem); }
+      .hero-actions { align-items: flex-start; flex-direction: column; gap: 15px; }
+      .section { padding: 78px 0; }
+      .intro { padding: 78px 0; }
+      .section-heading { margin-bottom: 36px; }
+      .services-grid { grid-template-columns: 1fr; }
+      .service-card { min-height: 190px; }
+      .equipment-gallery { grid-template-rows: 180px 180px; gap: 10px; }
+      .differential-grid { grid-template-columns: 1fr; }
+      .differential-item { min-height: 105px; padding: 20px; }
+      .partnership-grid { grid-template-columns: 1fr; }
+      .partner-card { padding: 27px 23px; }
+      .partner-card .partner-description { min-height: 0; }
+      .area-atendimento { padding: 68px 0; }
+      .cta-final { padding: 75px 0; }
+    }
+    @media (max-width: 420px) {
+      .equipment-gallery { grid-template-columns: 1fr 1fr; grid-template-rows: 145px 145px; }
+      .equipment-gallery figure:first-child { grid-row: span 2; }
+      .btn { width: 100%; padding-inline: 18px; }
+    }
+
+    /* Orçamento e conversão */
+    .service-card { gap: 18px; }
+    .service-link { display:inline-flex; align-items:center; gap:8px; width:fit-content; margin-top:4px; color:var(--navy); font-size:.88rem; font-weight:800; text-decoration:none; border-bottom:2px solid var(--yellow); padding-bottom:3px; }
+    .service-link span { font-size:1.15rem; transition:transform .2s ease; }
+    .service-link:hover span { transform:translateX(4px); }
+    .quote-section { background:#F5F7FA; }
+    .quote-grid { display:grid; grid-template-columns:.9fr 1.1fr; gap:70px; align-items:start; }
+    .quote-copy h2 { margin-top:15px; color:var(--navy); font:800 clamp(2rem,4vw,3.15rem)/1.12 "Manrope",sans-serif; letter-spacing:-.045em; }
+    .quote-copy > p { margin-top:18px; line-height:1.8; }
+    .quote-points { list-style:none; margin-top:25px; }
+    .quote-points li { margin:12px 0; padding-left:29px; position:relative; font-weight:600; }
+    .quote-points li::before { content:"✓"; position:absolute; left:0; color:var(--navy); font-weight:900; }
+    .quote-form { padding:32px; background:#fff; border:1px solid var(--line); border-radius:16px; box-shadow:var(--shadow); display:grid; gap:10px; }
+    .quote-form label { color:var(--navy); font-size:.88rem; font-weight:800; margin-top:5px; }
+    .quote-form label span { color:#697386; font-weight:500; }
+    .quote-form input,.quote-form select,.quote-form textarea { width:100%; min-height:49px; border:1px solid #D8DEE8; border-radius:8px; padding:12px 14px; color:var(--ink); background:#fff; font:inherit; font-size:.94rem; }
+    .quote-form textarea { resize:vertical; min-height:95px; }
+    .quote-form input:focus,.quote-form select:focus,.quote-form textarea:focus { outline:3px solid rgba(255,222,33,.35); border-color:var(--navy-light); }
+    .quote-submit { width:100%; margin-top:12px; cursor:pointer; font:inherit; font-weight:800; }
+    .quote-form small { color:#687386; text-align:center; font-size:.76rem; }
+    .faq-section { padding-top:85px; }
+    .faq-list { max-width:850px; margin:auto; display:grid; gap:12px; }
+    .faq-item { padding:20px 23px; border:1px solid var(--line); border-radius:10px; background:#fff; }
+    .faq-item summary { color:var(--navy); font-weight:800; cursor:pointer; }
+    .faq-item p { margin-top:12px; line-height:1.75; }
+    .whatsapp-float { position:fixed; right:22px; bottom:22px; z-index:1100; display:inline-flex; align-items:center; gap:10px; padding:13px 18px; border-radius:999px; background:#168C45; color:#fff; text-decoration:none; font-size:.88rem; font-weight:800; box-shadow:0 12px 30px rgba(0,0,0,.22); }
+    .whatsapp-icon { font-size:1.2rem; }
+    @media(max-width:800px) { .quote-grid { grid-template-columns:1fr; gap:30px; } .quote-form { padding:24px 20px; } }
+    @media(max-width:520px) { .whatsapp-float { right:13px; bottom:13px; width:56px; height:56px; justify-content:center; padding:0; } .whatsapp-float span:last-child { display:none; } }
+
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#" aria-label="MTA - Página inicial">
+        <img src="ChatGPT Image 28 de jul. de 2026, 21_07_47.png" alt="MTA Marcelino Topografia e Agrimensura" width="220" height="66">
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="primary-menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <nav class="nav-menu" id="primary-menu" aria-label="Navegação principal">
+        <a href="#servicos">Serviços</a>
+        <a href="#equipamentos">Equipamentos</a>
+        <a href="#contato">Contato</a>
+        <a class="nav-cta" href="https://wa.me/5541988842635?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20MTA%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento." target="_blank" rel="noopener noreferrer">Pedir orçamento</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy reveal">
+          <span class="eyebrow">MTA · Precisão em cada detalhe</span>
+          <h1>Seu terreno medido e regularizado com precisão.</h1>
+          <p>Serviços de topografia e agrimensura para terrenos, chácaras e imóveis urbanos e rurais em São José dos Pinhais e região. Converse com a MTA e solicite uma avaliação do seu serviço.</p>
+          <div class="hero-actions">
+            <a class="btn" target="_blank" rel="noopener noreferrer" href="https://wa.me/5541988842635?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20MTA%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento."
+               onclick="gtag('event', 'whatsapp_orcamento', {'event_category': 'contato', 'event_label': 'Solicitar Orçamento'});">
+              Solicitar Orçamento Gratuito
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <span class="hero-note"><span>●</span> Atendimento em São José dos Pinhais e região</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="intro">
+      <div class="container intro-grid">
+        <div class="intro-title reveal">
+          <span class="eyebrow">Conheça a MTA</span>
+          <h2>Quem Somos</h2>
+        </div>
+        <div class="intro-copy reveal">
+          <p>A MTA (Marcelino Topografia e Agrimensura) é especializada em topografia e agrimensura, atuando com precisão, responsabilidade e tecnologia de ponta. Utilizamos equipamentos modernos, como GNSS RTK, estação total e drones, garantindo levantamentos confiáveis e de alta qualidade. Nosso trabalho é pautado pelo comprometimento, atenção aos detalhes e busca constante pela excelência, oferecendo soluções eficientes para cada projeto. Além disso, contamos com apoio de assessoria jurídica e engenharia florestal, garantindo suporte completo e multidisciplinar.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section services" id="servicos">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Soluções técnicas</span>
+          <h2>Serviços</h2>
+        </div>
+        <div class="services-grid">
+          <article class="service-card reveal">
+      <span class="service-number">01 / MTA</span>
+      <div><h3>Medição de Terrenos e Chácaras</h3><p>Determinação técnica da área e das medidas do seu imóvel.</p></div>
+      <a class="service-link" href="https://wa.me/5541988842635?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20MTA%20e%20gostaria%20de%20um%20or%C3%A7amento%20para%3A%20Medi%C3%A7%C3%A3o%20de%20terreno%20ou%20ch%C3%A1cara." target="_blank" rel="noopener noreferrer" data-track="whatsapp_servico">Pedir orçamento <span aria-hidden="true">→</span></a>
+    </article>
+          <article class="service-card reveal">
+      <span class="service-number">02 / MTA</span>
+      <div><h3>Georreferenciamento Rural</h3><p>Levantamento e documentação técnica para imóveis rurais, conforme a necessidade do projeto.</p></div>
+      <a class="service-link" href="https://wa.me/5541988842635?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20MTA%20e%20gostaria%20de%20um%20or%C3%A7amento%20para%3A%20Georreferenciamento%20rural." target="_blank" rel="noopener noreferrer" data-track="whatsapp_servico">Pedir orçamento <span aria-hidden="true">→</span></a>
+    </article>
+          <article class="service-card reveal">
+      <span class="service-number">03 / MTA</span>
+      <div><h3>Demarcação de Divisas</h3><p>Identificação e materialização dos limites da propriedade em campo.</p></div>
+      <a class="service-link" href="https://wa.me/5541988842635?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20MTA%20e%20gostaria%20de%20um%20or%C3%A7amento%20para%3A%20Demarca%C3%A7%C3%A3o%20de%20divisas." target="_blank" rel="noopener noreferrer" data-track="whatsapp_servico">Pedir orçamento <span aria-hidden="true">→</span></a>
+    </article>
+          <article class="service-card reveal">
+      <span class="service-number">04 / MTA</span>
+      <div><h3>Desmembramento de Lotes</h3><p>Projeto técnico para divisão de uma área em lotes, conforme as exigências aplicáveis.</p></div>
+      <a class="service-link" href="https://wa.me/5541988842635?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20MTA%20e%20gostaria%20de%20um%20or%C3%A7amento%20para%3A%20Desmembramento%20de%20lotes." target="_blank" rel="noopener noreferrer" data-track="whatsapp_servico">Pedir orçamento <span aria-hidden="true">→</span></a>
+    </article>
+          <article class="service-card reveal">
+      <span class="service-number">05 / MTA</span>
+      <div><h3>Unificação de Lotes</h3><p>Levantamento e documentação técnica para unificação de áreas.</p></div>
+      <a class="service-link" href="https://wa.me/5541988842635?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20MTA%20e%20gostaria%20de%20um%20or%C3%A7amento%20para%3A%20Unifica%C3%A7%C3%A3o%20de%20lotes." target="_blank" rel="noopener noreferrer" data-track="whatsapp_servico">Pedir orçamento <span aria-hidden="true">→</span></a>
+    </article>
+          <article class="service-card reveal">
+      <span class="service-number">06 / MTA</span>
+      <div><h3>Usucapião – Plantas e Memoriais</h3><p>Peças técnicas de levantamento para instruir processos de usucapião.</p></div>
+      <a class="service-link" href="https://wa.me/5541988842635?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20MTA%20e%20gostaria%20de%20um%20or%C3%A7amento%20para%3A%20Planta%20e%20memorial%20para%20usucapi%C3%A3o." target="_blank" rel="noopener noreferrer" data-track="whatsapp_servico">Pedir orçamento <span aria-hidden="true">→</span></a>
+    </article>
+          <article class="service-card reveal">
+      <span class="service-number">07 / MTA</span>
+      <div><h3>Levantamento Cadastral</h3><p>Representação de terrenos, construções e elementos existentes na área.</p></div>
+      <a class="service-link" href="https://wa.me/5541988842635?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20MTA%20e%20gostaria%20de%20um%20or%C3%A7amento%20para%3A%20Levantamento%20cadastral." target="_blank" rel="noopener noreferrer" data-track="whatsapp_servico">Pedir orçamento <span aria-hidden="true">→</span></a>
+    </article>
+          <article class="service-card reveal">
+      <span class="service-number">08 / MTA</span>
+      <div><h3>Georreferenciamento Urbano</h3><p>Levantamento e representação técnica de imóveis em área urbana.</p></div>
+      <a class="service-link" href="https://wa.me/5541988842635?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20MTA%20e%20gostaria%20de%20um%20or%C3%A7amento%20para%3A%20Georreferenciamento%20urbano." target="_blank" rel="noopener noreferrer" data-track="whatsapp_servico">Pedir orçamento <span aria-hidden="true">→</span></a>
+    </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="equipamentos">
+      <div class="container equipment-layout">
+        <div class="equipment-intro reveal">
+          <span class="eyebrow">Precisão em campo</span>
+          <h2>Tecnologia e Equipamentos</h2>
+        </div>
+        <div class="equipment-gallery reveal">
+          <figure><img src="rtk.jpg" alt="Receptor GNSS RTK utilizado em levantamentos topográficos" loading="lazy"><figcaption>GNSS RTK</figcaption></figure>
+          <figure><img src="estacao-total.jpeg" alt="Estação total utilizada em levantamentos topográficos" loading="lazy"><figcaption>Estação Total</figcaption></figure>
+          <figure><img src="droneppk.jpeg" alt="Drone utilizado em mapeamento e levantamento aéreo" loading="lazy"><figcaption>Drone PPK</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section differentials">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">O que nos diferencia</span>
+          <h2>Diferenciais</h2>
+        </div>
+        <div class="differential-grid">
+          <div class="differential-item reveal"><span class="check">✓</span><span>Levantamentos Rápidos e Precisos</span></div>
+          <div class="differential-item reveal"><span class="check">✓</span><span>Atendimento Rural e Urbano</span></div>
+          <div class="differential-item reveal"><span class="check">✓</span><span>Regularização Completa de Imóveis</span></div>
+          <div class="differential-item reveal"><span class="check">✓</span><span>Equipe Técnica Especializada</span></div>
+          <div class="differential-item reveal"><span class="check">✓</span><span>Tecnologia de Ponta em Campo</span></div>
+          <div class="differential-item reveal"><span class="check">✓</span><span>Soluções Florestais e Ambientais</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Atuação integrada</span>
+          <h2>Parcerias Técnicas Especializadas</h2>
+        </div>
+        <div class="partnership-grid">
+          <article class="partner-card reveal">
+            <div class="partner-top">
+              <div class="partner-symbol" aria-hidden="true">⚖️</div>
+              <div><h3>Assessoria Jurídica Imobiliária</h3><strong>Advogado especialista em Direito Imobiliário</strong></div>
+            </div>
+            <p class="partner-description">✔ Suporte jurídico com serviços de regularização e documentação imobiliária.</p>
+<a class="btn" href="https://wa.me/5541988842635?text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20assessoria%20jur%C3%ADdica%20imobili%C3%A1ria."
+               onclick="gtag('event', 'whatsapp_juridico', {'event_category': 'contato', 'event_label': 'Assessoria Jurídica', 'transport_type': 'beacon'});">
+              Mais Informações
+
+            </a>
+          </article>
+          <article class="partner-card reveal">
+            <div class="partner-top">
+              <div class="partner-symbol" aria-hidden="true">🌳</div>
+              <div><h3>Consultoria Florestal e Ambiental</h3><strong>Engenheiro Florestal</strong></div>
+            </div>
+            <ul class="partner-list">
+              <li>Inventário florestal (medição e análise de árvores e áreas florestais)</li>
+              <li>Manejo florestal sustentável (planejamento de corte, replantio e conservação)</li>
+              <li>Licenciamento ambiental e estudos ambientais</li>
+              <li>Recuperação de áreas degradadas (reflorestamento e recomposição de vegetação)</li>
+              <li>Geoprocessamento e uso de imagens de satélite para análise de áreas</li>
+              <li>Planejamento de plantios comerciais (eucalipto, pinus e espécies nativas)</li>
+              <li>Perícias e laudos ambientais e florestais</li>
+              <li>Carbono florestal e projetos de crédito de carbono</li>
+            </ul>
+            <a class="btn" href="https://wa.me/5541988842635?text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20consultoria%20florestal%20e%20ambiental."
+               onclick="gtag('event', 'whatsapp_florestal', {'event_category': 'contato', 'event_label': 'Consultoria Florestal', 'transport_type': 'beacon'});">
+              Mais Informações
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="area-atendimento">
+      <div class="container reveal">
+        <span class="eyebrow">Onde atuamos</span>
+        <h2>Área de Atendimento</h2>
+        <p>Atendimento em São José dos Pinhais, Curitiba, Mandirituba, Tijucas do Sul, Fazenda Rio Grande e região metropolitana. Consulte a disponibilidade para sua localidade.</p>
+      </div>
+    </section>
+
+    <section class="section quote-section" id="solicitar-orcamento">
+      <div class="container quote-grid">
+        <div class="quote-copy reveal">
+          <span class="eyebrow">Solicite seu orçamento</span>
+          <h2>Conte um pouco sobre seu imóvel.</h2>
+          <p>Informe os dados básicos para começarmos o atendimento. Sua mensagem será encaminhada ao WhatsApp da MTA.</p>
+          <ul class="quote-points">
+            <li>Atendimento direto pelo WhatsApp</li>
+            <li>Informe o serviço e a cidade do imóvel</li>
+            <li>Você pode enviar localização e documentos na conversa</li>
+          </ul>
+        </div>
+        <form class="quote-form reveal" id="quote-form">
+          <label for="quote-name">Seu nome</label>
+          <input id="quote-name" name="nome" type="text" placeholder="Como podemos chamar você?" autocomplete="name" required>
+          <label for="quote-service">Qual serviço você precisa?</label>
+          <select id="quote-service" name="servico" required>
+            <option value="">Selecione um serviço</option>
+            <option>Medição de terreno ou chácara</option>
+            <option>Georreferenciamento rural</option>
+            <option>Demarcação de divisas</option>
+            <option>Desmembramento de lotes</option>
+            <option>Unificação de lotes</option>
+            <option>Planta e memorial para usucapião</option>
+            <option>Levantamento cadastral</option>
+            <option>Georreferenciamento urbano</option>
+            <option>Outro serviço / Ainda não sei</option>
+          </select>
+          <label for="quote-city">Cidade do imóvel</label>
+          <input id="quote-city" name="cidade" type="text" placeholder="Ex.: São José dos Pinhais" required>
+          <label for="quote-details">Informações adicionais <span>(opcional)</span></label>
+          <textarea id="quote-details" name="detalhes" rows="3" placeholder="Área aproximada, tipo de imóvel ou o que precisa ser feito."></textarea>
+          <button class="btn quote-submit" type="submit">Enviar pedido pelo WhatsApp <span aria-hidden="true">→</span></button>
+          <small>O WhatsApp será aberto com sua mensagem pronta. O site não armazena esses dados.</small>
+        </form>
+      </div>
+    </section>
+
+    <section class="section faq-section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Dúvidas frequentes</span>
+          <h2>Antes de solicitar seu orçamento</h2>
+        </div>
+        <div class="faq-list">
+          <details class="faq-item reveal"><summary>Quais informações ajudam a preparar um orçamento?</summary><p>A cidade, a localização do imóvel, o tipo de serviço e, se possível, a área aproximada ajudam a entender sua necessidade.</p></details>
+          <details class="faq-item reveal"><summary>A MTA atende imóveis rurais e urbanos?</summary><p>Sim. Entre em contato e informe onde fica a propriedade e qual serviço você precisa.</p></details>
+          <details class="faq-item reveal"><summary>Posso pedir orçamento sem ter todos os documentos?</summary><p>Sim. Você pode iniciar a conversa explicando sua necessidade. A equipe orientará quais informações serão necessárias para avaliar o serviço.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="cta-final">
+      <div class="container cta-content reveal">
+        <h2>Vamos conversar sobre seu imóvel?</h2>
+        <a class="btn" target="_blank" rel="noopener noreferrer" href="https://wa.me/5541988842635?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20MTA%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento."
+           onclick="gtag('event', 'whatsapp_orcamento', {'event_category': 'contato', 'event_label': 'Solicitar Orçamento'});">
+          Solicitar Orçamento Gratuito
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <div class="redes">
+          <a href="https://www.instagram.com/mtagrimensuras" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://www.facebook.com/share/1Dz5rKtDHU" target="_blank" rel="noopener noreferrer">Facebook</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <a class="whatsapp-float" href="https://wa.me/5541988842635?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20MTA%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento." target="_blank" rel="noopener noreferrer" aria-label="Solicitar orçamento pelo WhatsApp">
+    <span class="whatsapp-icon" aria-hidden="true">◉</span><span>Orçamento no WhatsApp</span>
+  </a>
+  <footer>MTA Marcelino Topografia e Agrimensura © 2026</footer>
+
+  <script>
+    const menuButton = document.querySelector('.menu-toggle');
+    const menu = document.querySelector('.nav-menu');
+
+    menuButton.addEventListener('click', () => {
+      const isOpen = menu.classList.toggle('is-open');
+      menuButton.setAttribute('aria-expanded', String(isOpen));
+      menuButton.setAttribute('aria-label', isOpen ? 'Fechar menu' : 'Abrir menu');
+    });
+
+    menu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        menu.classList.remove('is-open');
+        menuButton.setAttribute('aria-expanded', 'false');
+        menuButton.setAttribute('aria-label', 'Abrir menu');
+      });
+    });
+
+
+    const quoteForm = document.querySelector('#quote-form');
+    quoteForm.addEventListener('submit', (event) => {
+      event.preventDefault();
+      const data = new FormData(quoteForm);
+      const message = [
+        'Olá! Vim pelo site da MTA e gostaria de solicitar um orçamento.',
+        '',
+        `Nome: ${data.get('nome')}`,
+        `Serviço: ${data.get('servico')}`,
+        `Cidade do imóvel: ${data.get('cidade')}`,
+        data.get('detalhes') ? `Informações adicionais: ${data.get('detalhes')}` : ''
+      ].filter(Boolean).join('\n');
+      if (typeof gtag === 'function') gtag('event', 'whatsapp_formulario', { event_category: 'contato', event_label: data.get('servico') });
+      window.open(`https://wa.me/5541988842635?text=${encodeURIComponent(message)}`, '_blank', 'noopener');
+    });
+    document.querySelectorAll('[data-track="whatsapp_servico"]').forEach(link => {
+      link.addEventListener('click', () => {
+        if (typeof gtag === 'function') gtag('event', 'whatsapp_servico', { event_category: 'contato', event_label: link.closest('.service-card').querySelector('h3').textContent });
+      });
+    });
+
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.reveal').forEach(element => revealObserver.observe(element));
+  </script>
+</body>
+</html>
